@@ -1,6 +1,6 @@
 {% extends "::base.html.twig" %}
 
-{% block title %}{{ parent() }} - Homepage{% endblock %}
+{% block title %}{{ parent() }} - List{% endblock %}
 
 {% block stylesheets %}
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
@@ -22,10 +22,13 @@
 {% endblock %}
 
 {% block body %}
-    <div class="title">2017-ųjų NFQ Akademijos rudens semestro priėmimo užduoties liūdniausias sprendimas!</div>
-    <h1>I am in the saddest index ever!</h1>
-    <h2>It's sad since I don't have any presentation of who I am.</h2>
-    <h3>It's even more sad since I don't have an order form.</h3>
-    <h4>I'm silent about at least 50 meaningful entries in DB.</h4>
-    <h5>Did you say something about CSS, JS?</h5>
+    <div class="title">Most sad order list is {{ number }}!</div>
+    <p>It's even more sad since it's just a random number instead of a list from DB.</p>
+    <p>I'll let you on a little secret, I should be accessible from admin panel. But there's no admin panel.</p>
+    <p>I would be more sad if could
+    <ul>
+        <li>Paginate</li>
+        <li>Search/Find</li>
+        <li>Sort</li>
+    </ul>
 {% endblock %}
